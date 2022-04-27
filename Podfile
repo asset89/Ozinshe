@@ -7,6 +7,11 @@ target 'Ozinshe' do
 
   # Pods for Ozinshe
   pod 'Localize-Swift', '~> 3.2'
+  pod 'Alamofire'
+  pod 'Moya/RxSwift', '~> 15.0'
+  pod 'RxSwift', '6.5.0'
+  pod 'RxCocoa', '6.5.0'
+  
 
   target 'OzinsheTests' do
     inherit! :search_paths

@@ -20,6 +20,13 @@
 		055CCB5F280EA0CA00838F75 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CCB5E280EA0CA00838F75 /* SignInViewController.swift */; };
 		055CCB64280EA71E00838F75 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CCB63280EA71E00838F75 /* Credentials.swift */; };
 		055CCB67280EA78000838F75 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CCB66280EA78000838F75 /* SignInViewModel.swift */; };
+		055CCB6A280FF88500838F75 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CCB69280FF88500838F75 /* Constants.swift */; };
+		055CCB6D280FFC0900838F75 /* TextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CCB6C280FFC0900838F75 /* TextFieldExtension.swift */; };
+		055CCB71281445D600838F75 /* OzinsheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CCB70281445D600838F75 /* OzinsheService.swift */; };
+		055CCB73281446A700838F75 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CCB72281446A700838F75 /* Urls.swift */; };
+		055CCB752814473B00838F75 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CCB742814473B00838F75 /* AuthService.swift */; };
+		055CCB7828146F9900838F75 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CCB7728146F9900838F75 /* AuthManager.swift */; };
+		055CCB7B2814739700838F75 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 055CCB7A2814739700838F75 /* Storage.swift */; };
 		611D3F0B045297D3527A0384 /* Pods_Ozinshe_OzinsheUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498498C19C5DD40508316CD1 /* Pods_Ozinshe_OzinsheUITests.framework */; };
 		72D013BF12B6FD1C605EE90A /* Pods_OzinsheTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6EE0DC84523C2E1A5A3B26 /* Pods_OzinsheTests.framework */; };
 		D1A1C74425FBC511BC1643E2 /* Pods_Ozinshe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4762C9706A4763D050A7641 /* Pods_Ozinshe.framework */; };
@@ -65,6 +72,13 @@
 		055CCB5E280EA0CA00838F75 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		055CCB63280EA71E00838F75 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		055CCB66280EA78000838F75 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		055CCB69280FF88500838F75 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		055CCB6C280FFC0900838F75 /* TextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExtension.swift; sourceTree = "<group>"; };
+		055CCB70281445D600838F75 /* OzinsheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OzinsheService.swift; sourceTree = "<group>"; };
+		055CCB72281446A700838F75 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		055CCB742814473B00838F75 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		055CCB7728146F9900838F75 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		055CCB7A2814739700838F75 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		345D6194596EC9314B2A1887 /* Pods-Ozinshe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ozinshe.release.xcconfig"; path = "Target Support Files/Pods-Ozinshe/Pods-Ozinshe.release.xcconfig"; sourceTree = "<group>"; };
 		498498C19C5DD40508316CD1 /* Pods_Ozinshe_OzinsheUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ozinshe_OzinsheUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C04469128272724CC526003 /* Pods-OzinsheTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OzinsheTests.debug.xcconfig"; path = "Target Support Files/Pods-OzinsheTests/Pods-OzinsheTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,7 +143,11 @@
 		055CCB1C2806BEA000838F75 /* Ozinshe */ = {
 			isa = PBXGroup;
 			children = (
+				055CCB792814738000838F75 /* Storage */,
+				055CCB6E2814458B00838F75 /* Network */,
+				055CCB6B280FFBEB00838F75 /* Extensions */,
 				055CCB4D2807B3D000838F75 /* Fonts */,
+				055CCB68280FF86A00838F75 /* Utilities */,
 				055CCB1D2806BEA000838F75 /* AppDelegate.swift */,
 				055CCB1F2806BEA000838F75 /* SceneDelegate.swift */,
 				055CCB60280EA6AC00838F75 /* Model */,
@@ -218,6 +236,57 @@
 				055CCB66280EA78000838F75 /* SignInViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		055CCB68280FF86A00838F75 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				055CCB69280FF88500838F75 /* Constants.swift */,
+				055CCB72281446A700838F75 /* Urls.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		055CCB6B280FFBEB00838F75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				055CCB6C280FFC0900838F75 /* TextFieldExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		055CCB6E2814458B00838F75 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				055CCB7628146F6800838F75 /* Network Manager */,
+				055CCB6F2814459A00838F75 /* MoyaLayer */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		055CCB6F2814459A00838F75 /* MoyaLayer */ = {
+			isa = PBXGroup;
+			children = (
+				055CCB70281445D600838F75 /* OzinsheService.swift */,
+				055CCB742814473B00838F75 /* AuthService.swift */,
+			);
+			path = MoyaLayer;
+			sourceTree = "<group>";
+		};
+		055CCB7628146F6800838F75 /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				055CCB7728146F9900838F75 /* AuthManager.swift */,
+			);
+			path = "Network Manager";
+			sourceTree = "<group>";
+		};
+		055CCB792814738000838F75 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				055CCB7A2814739700838F75 /* Storage.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		323D9FB1EFBB00CAF729F6A8 /* Frameworks */ = {
@@ -486,11 +555,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				055CCB5F280EA0CA00838F75 /* SignInViewController.swift in Sources */,
+				055CCB7828146F9900838F75 /* AuthManager.swift in Sources */,
+				055CCB71281445D600838F75 /* OzinsheService.swift in Sources */,
+				055CCB6D280FFC0900838F75 /* TextFieldExtension.swift in Sources */,
 				055CCB1E2806BEA000838F75 /* AppDelegate.swift in Sources */,
 				055CCB67280EA78000838F75 /* SignInViewModel.swift in Sources */,
+				055CCB752814473B00838F75 /* AuthService.swift in Sources */,
 				055CCB64280EA71E00838F75 /* Credentials.swift in Sources */,
+				055CCB6A280FF88500838F75 /* Constants.swift in Sources */,
 				055CCB5D280EA09600838F75 /* MainTabBarController.swift in Sources */,
 				055CCB202806BEA000838F75 /* SceneDelegate.swift in Sources */,
+				055CCB73281446A700838F75 /* Urls.swift in Sources */,
+				055CCB7B2814739700838F75 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

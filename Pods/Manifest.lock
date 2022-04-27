@@ -1,21 +1,47 @@
 PODS:
+  - Alamofire (5.5.0)
   - Localize-Swift (3.2.0):
     - Localize-Swift/LocalizeSwiftCore (= 3.2.0)
     - Localize-Swift/UIKit (= 3.2.0)
   - Localize-Swift/LocalizeSwiftCore (3.2.0)
   - Localize-Swift/UIKit (3.2.0):
     - Localize-Swift/LocalizeSwiftCore
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (15.0.0):
+    - Moya/Core
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
 
 DEPENDENCIES:
+  - Alamofire
   - Localize-Swift (~> 3.2)
+  - Moya/RxSwift (~> 15.0)
+  - RxCocoa (= 6.5.0)
+  - RxSwift (= 6.5.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - Localize-Swift
+    - Moya
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
 
-PODFILE CHECKSUM: d5170f5e71b73993f7d384dc8f6d0b1b87f32bb2
+PODFILE CHECKSUM: bf7f7531fc91308ecbdc04555866fbf6033156bf
 
 COCOAPODS: 1.11.0
